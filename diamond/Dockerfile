@@ -3,8 +3,7 @@ MAINTAINER Daekwon Kim <propellerheaven@gmail.com>
 
 # Install base packages
 RUN apt-get update
-RUN apt-get install -y python python-support python-configobj python-pip make pbuilder python-mock cdbs
-RUN pip install docker-py
+RUN apt-get install -y python python-support python-configobj make pbuilder python-mock cdbs
 
 # Install diamond
 RUN git clone https://github.com/BrightcoveOS/Diamond.git /opt/Diamond
